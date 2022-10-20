@@ -35,14 +35,14 @@ class Tech : Fragment() {
 //        val view = inflater.inflate(R.layout.fragment_tech,container,false)
 
         binding = FragmentTechBinding.inflate(inflater)
-        val recyclerView = binding.recyclerView
-        val fragmentJob = Job()
-        val coroutineScope = CoroutineScope(fragmentJob+Dispatchers.Main)
-        recyclerView.layoutManager = LinearLayoutManager(view?.context)
-        coroutineScope.launch {
-            newsData = NewsRetriever().getNews()
-            recyclerView.adapter = TechRvAdapter(newsData)
-        }
+//        val recyclerView = binding.recyclerView
+//        val fragmentJob = Job()
+//        val coroutineScope = CoroutineScope(fragmentJob+Dispatchers.Main)
+//        recyclerView.layoutManager = LinearLayoutManager(view?.context)
+//        coroutineScope.launch {
+//            newsData = NewsRetriever().getNews()
+//            recyclerView.adapter = TechRvAdapter(newsData)
+//        }
         return super.onCreateView(inflater, container, savedInstanceState)
     }
 

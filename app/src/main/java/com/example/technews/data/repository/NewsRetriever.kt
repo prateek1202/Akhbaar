@@ -7,7 +7,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class NewsRetriever {
     private val service: NewsService
-    private val URL = "https://newsapi.org/v2"
+    private val URL = "https://newsapi.org"
 
     init {
         val retrofit = Retrofit.Builder()
